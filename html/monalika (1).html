@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            background-image: url(Campus_of_Chandigarh_University.jpg);
+            background-size: cover;
+            background-repeat: no-repeat ;
+        }
+
+        div{
+            background-color: rgba(128, 128, 128, 0.89);
+            margin-top: 300px;
+            padding-left: 147px;
+            padding-right: 147px;
+            border: none;
+            border-radius: 23px;
+            display: inline-block;
+        }
+
+
+        ::placeholder{
+            color: black ;
+            text-align: center;
+        }
+
+
+    </style>
+
+    <script>
+        var M = document.getElementById("M").value ;
+        function  check(){
+        if(M == "M9nal8ka@"){
+            alert("Login Successful");
+        }
+
+        else{
+            alert("Wrong password");
+        }
+    }
+    </script>
+</head>
+<body>
+    <div>
+        <h1></h1>
+        <form action="" method="post" style="padding-top: 23px;">
+            <input type="text"  placeholder="Name" style="color: gray; background-color: rgb(233, 227, 227); border-radius: 23px; width: 247px;"><br><br>
+            <input type="text" placeholder="UID" style="color: gray; background-color: rgb(233, 227, 227); border-radius: 23px; width: 247px;"><br><br>
+            <input type="password" id="M" placeholder="password" style="color: gray; background-color: rgb(233, 227, 227); border-radius: 23px; width: 247px;"><br><br>
+            <input type="submit" style="color: gray; background-color: rgb(233, 227, 227); border-radius: 23px; width: 247px;" onclick="check()">
+        </form>
+
+    </div>
+</body>
+</html>
